@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Website</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+  </head>
+  <body
+    class="bg-gradient-to-t from-pink-500/80 via-pink-400/80 to-pink-300/80 min-h-screen"
+  >
+    <nav class="bg-pink-100/55 flex flex-row justify-between px-10 py-6 w-full">
+      <div>
+        <img
+          onclick="window.location.href= 'index.html'"
+          class="h-28 cursor-pointer"
+          src="images/activity-heartbeat (1).svg"
+        />
+      </div>
+      <div class="flex md:flex-row gap-10">
+        <ul
+          class="flex md:flex-row items-center gap-5 font-poppins font-semibold text-lg text-pink-500"
+        >
+          <li>
+            <a href="index.html" class="hover:text-white duration-500">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-white duration-500">About</a>
+          </li>
+          <li>
+            <a href="testimonials.html" class="hover:text-white duration-500"
+              >Testimonials</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center">
+          <button
+            onclick="window.location.href= 'contact.html'"
+            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-poppins text-white hover:shadow-2xl transform hover:scale-105 duration-500 shadow-md hover:shadow-white rounded-full px-10 py-5"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="min-h-screen flex flex-col justify-center">
+      <div>
+        <h1
+          class="text-7xl font-playfair text-pink-200 shadow-white font-semibold text-transform text-center px-10 py-10"
+        >
+          Demo Website
+        </h1>
+      </div>
+      <div class="flex items-center justify-center text-transform">
+        <button
+          onclick="window.location.href= 'about.html'"
+          class="text-pink-500 font-poppins font-bold bg-pink-200 hover:bg-pink-500 hover:text-pink-100 transition duration-500 rounded-full px-5 py-5 shadow-md shadow-pink-100 hover:shadow-pink-500/50"
+        >
+          Learn more →
+        </button>
+      </div>
+    </main>
+    <footer
+      class="bg-pink-500 px-20 py-20 flex flex-col justify-between text-transform"
+    >
+      <h1 class="text-center text-white text-5xl font-playfair font-semibold">
+        Stay in the Loop
+      </h1>
+      <section
+        class="flex text-center font-playfair items-center justify-center gap-6 px-5 py-5 text-white"
+      >
+        <a href="" class="hover:text-pink-200 hover:transition duration-100">
+          Facebook
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="" class="hover:text-pink-200 hover:transition duration-100">
+          Instagram
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="" class="hover:text-pink-200 hover:transition duration-100">
+          X
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </a>
+      </section>
+      <div class="text-white text-center font-roboto text-sm">
+        coded by <a>sahar at weiom.io</a>
+      </div>
+    </footer>
+    <script>
+      const scroll = ScrollReveal({
+        reset: true,
+        duration: 2600,
+        distance: "60px",
+      });
+      scroll.reveal(".text-transform", { delay: 300, origin: "bottom" });
+    </script>
+  </body>
+</html>
